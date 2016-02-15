@@ -14,6 +14,8 @@ public class FollowTarget : MonoBehaviour {
 	}
 	void Start(){
 		character = GameObject.Find ("Player").transform;
+//		character = GameObject.Find ("test").transform;
+
 	}
 
 	void  Update()
