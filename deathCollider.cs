@@ -19,8 +19,7 @@ public class deathCollider : MonoBehaviour {
 
 
 	void OnCollisionEnter(Collision col){//OnTriggerEnter OnTriggerStay OnTiggerExit
-		if(col.gameObject.tag=="Player"){
-			//			GetComponent<AudioSource>().Play();//播放音效
+		if(col.gameObject.tag=="player"){
 			print("dead");
 			//			GameManager._intance.GameState = GameManager.GAMESTATE_END;//改变游戏状态
 		}

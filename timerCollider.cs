@@ -21,7 +21,7 @@ public class timerCollider : MonoBehaviour
 
 	void OnCollisionEnter (Collision col)
 	{
-		if (col.gameObject.tag == "Player") {
+		if (col.gameObject.tag == "player") {
 			print ("start");
 			Destroy (gameObject, TIMER);
 //			播放动画效果

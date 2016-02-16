@@ -15,13 +15,13 @@ public class countCollider : MonoBehaviour {
 	
 	}
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "Player") {
+		if (col.gameObject.tag == "player") {
 			COUNTER++;
 			print (COUNTER);
 		}
 	}
 	void OnCollisionExit(Collision col){//OnTriggerEnter OnTriggerStay OnTiggerExit
-		if(col.gameObject.tag=="Player"){
+		if(col.gameObject.tag=="player"){
 			if (COUNTER == destroyTime) {
 				Destroy (gameObject);
 				print ("destroy");

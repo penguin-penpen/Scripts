@@ -13,7 +13,7 @@ public class FollowTarget : MonoBehaviour {
 		mainCamera = Camera.main;
 	}
 	void Start(){
-		character = GameObject.Find ("Player").transform;
+		character = GameObject.Find ("player").transform;
 //		character = GameObject.Find ("test").transform;
 
 	}

@@ -28,7 +28,7 @@ public class backnforthCollider : MonoBehaviour
 	}
 
 	void OnCollisionEnter(Collision col){
-		if(col.gameObject.tag=="Player"){
+		if(col.gameObject.tag=="player"){
 			//			GetComponent<AudioSource>().Play();//播放音效
 			print("dead");
 			//			GameManager._intance.GameState = GameManager.GAMESTATE_END;//改变游戏状态

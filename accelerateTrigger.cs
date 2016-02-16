@@ -18,7 +18,7 @@ public class accelerateTrigger : MonoBehaviour {
 
 	void onTriggerEnter(Collider other){
 //		Destroy(other.gameObject);
-		if(other.gameObject.tag == "Player")
+		if(other.gameObject.tag == "player")
 			print("Trigger");
 //		if (col.tag == "Player") {
 //			col.gameObject.GetComponent<Rigidbody> ().velocity += new Vector3 (10, 0, 0);
@@ -26,7 +26,7 @@ public class accelerateTrigger : MonoBehaviour {
 //		}
 	}
 	void OnCollisionEnter(Collision col){//OnTriggerEnter OnTriggerStay OnTiggerExit
-		if(col.gameObject.tag=="Player"){
+		if(col.gameObject.tag=="player"){
 			//			GetComponent<AudioSource>().Play();//播放音效
 			print("dead");
 			//			GameManager._intance.GameState = GameManager.GAMESTATE_END;//改变游戏状态
